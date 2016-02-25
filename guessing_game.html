@@ -13,7 +13,7 @@
       //입력값이 x보다 클 경우 down을 출력한다(다시 입력값을 받는다).
       //입력값이 x보다 작을 경우 up을 출력한다(다시 입력값을 받는다).
       //입력값이 x일 경우 축하 메세지를 출력한다.
-      while (user_answer != false) {
+      while (user_answer != null) {
         while (user_answer != correct_answer){
           if (user_answer > correct_answer){
             user_answer = prompt("숫자가 너무 크군요!\n DOWN");
