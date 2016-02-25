@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script>
+      //1부터 100사이의 정수 중에서 랜덤으로 정답이 될 숫자(x)를 하나 고른다.
+      var correct_answer = Math.floor(Math.random()*100 + 1);
+      //prompt 창을 띄운다.
+      //입력값을 받는다.
+      var user_answer = prompt("up down 게임!\n 1부터 100사이의 숫자중에서 하나의 숫자를 입력해주세요.");
+      //입력값이 x보다 클 경우 down을 출력한다(다시 입력값을 받는다).
+      //입력값이 x보다 작을 경우 up을 출력한다(다시 입력값을 받는다).
+      //입력값이 x일 경우 축하 메세지를 출력한다.
+      while (user_answer != correct_answer){
+        if (user_answer > correct_answer){
+          user_answer = prompt("숫자가 너무 크군요!\n DOWN");
+        } else if(user_answer < correct_answer) {
+          user_answer = prompt("숫자가 너무 작아요!\n UP");
+        }
+      }
+        alert("정답입니다!");
+      //end
+
+    </script>
+  </body>
+</html>
